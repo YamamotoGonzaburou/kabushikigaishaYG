@@ -1,0 +1,415 @@
+
+body{
+  margin: 0;
+}
+/*header*/
+header{
+  margin-bottom: 90px;
+}
+
+header h1{
+  font-size: 40px;
+  font-family: serif;
+  margin-left: 20px;
+  margin-bottom: 70px;
+  padding-left: 40px;
+  max-width: 600px;
+}
+
+header h1 span{
+  color: green;
+}
+
+header h1 img{
+   width: 50px; 
+   height: 50px;
+   border-radius: 49px;
+   vertical-align: -10px;
+ }
+
+ /*プロフィール*/
+ h2{
+   margin-left: 40px;
+ }
+
+ h2 div{
+   margin-bottom: 15px;
+   border-left: darkgreen 8px solid;
+ }
+
+ h2 img{
+   width: 35px;
+   height: 35px;
+ }
+
+ h2 section{
+   font-size: 20px;
+   margin-left: 20px;
+ }
+
+ .pro p{
+   font-size: 16px;
+   line-height: 35px;
+   margin-left: 60px;
+
+ }
+
+ /*目次*/
+.moku{
+  margin-left: 20px;
+  margin-bottom: 50px;
+  padding-left: 20px;
+}
+
+.moku h1{
+  border-left: darkgreen 8px solid;
+}
+
+ul,li:hover{
+  opacity: 0.7;
+}
+
+ul{
+  font-size: 20px;
+}
+
+.moku a{
+  color: #000;
+}
+
+.dis{
+  list-style: inside circle;
+  font-size: 15px;
+}
+
+/*cm*/
+aside{
+  max-width: 600px;
+  padding: 20px 150px 50px 30px;
+  margin-bottom: 50px;
+}
+
+aside p{
+  animation: den .7s infinite;
+}
+
+@keyframes den{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+    color: crimson;
+  }
+}
+aside .cmc{
+  display: flex;
+}
+
+aside .bb{
+  width: 350px;
+  height: 275px;
+  border-radius: 30px;
+  animation: bike cubic-bezier(0.165, 0.84, 0.44, 1) 3s 25s forwards;
+}
+
+@keyframes bike{
+  0%{
+    transform: translateX(0px);
+  }
+  
+  60%{
+    transform: translateX(275px) rotate(25deg);
+    opacity: 1
+  }
+
+  100%{
+    transform: rotate(0deg) translateY(30px) translateX(145px);
+  }
+}
+
+aside .oji{
+  margin-top: 50px;
+  margin-left: 250px;
+  width: 300px;
+  height: 275px;
+  transform: scale(-1, 1);
+  animation: oji 1.8s 27s forwards;
+}
+
+@keyframes oji{
+  0%{
+    opacity: 1;
+  }
+
+  100%{
+    transform: scale3d(1);
+    opacity: 0;
+  }
+}
+/*uber eatsとは*/
+nav h1{
+  border-left: darkgreen 8px solid;
+  margin-left: 20px;
+  margin-bottom: 70px;
+}
+
+nav section{
+  font-size: 25px;
+  margin-left: 30px;
+  margin-bottom: 40px;
+  border-bottom: green solid 1.5px;
+}
+
+.uber{
+  width: 320px;
+}
+
+nav p{
+  font-size:18px;
+  margin-left: 70px;
+}
+
+.pic{
+  padding-left: 40px;
+}
+
+/*使っている道具*/
+.uber2{
+  margin-top: 100px;
+  margin-bottom: 30px;
+  width: 280px;
+}
+
+nav dl{
+  margin-left: 70px;
+}
+
+nav dt{
+  margin-top: 50px;
+  font-size: 25px;
+}
+
+dl img{
+  width: 520px;
+  height: 300px;
+  border-radius: 25px;
+  margin-left: 30px;
+}
+
+nav dd{
+  padding-top: 20px;
+  font-size: 18px;
+  line-height: 50px;
+}
+
+/*配達の一日*/
+main h1{
+  border-left: darkgreen 8px solid;
+  margin-top: 150px;
+  margin-left: 20px;
+  margin-bottom: 70px;
+}
+
+main .nagare{
+  margin-left: 40px;
+  font-size: 25px;
+  border-left: solid 3px green;
+  
+}
+
+.container{
+  display: flex;
+  margin-left: 20px;
+  margin-bottom: 150px;
+}
+
+.container div{
+  height: 100px;
+  font-size: 18px;
+  text-align: center;
+  border: solid #000 1px;
+}
+
+.asa{
+  width: 90px;
+  background-color: rgb(250, 220, 164);
+}
+
+.hiru{
+  width: 140px;
+  background-color: rgb(227, 250, 164);
+}
+
+.kyu{
+  width: 140px;
+  background-color: rgb(164, 250, 190)
+}
+
+.yoru{
+  width: 190px;
+  background-color: rgb(164, 226, 250)
+}
+
+.kita{
+  width: 290px;
+  background-color: rgb(190, 164, 250)
+}
+
+/*一日の流れ（本文）*/
+section{
+  margin-left: 40px;
+}
+
+main section img{
+  width: 650px;
+  height: 300px;
+  border-radius: 10px;
+  margin-left: 50px;
+}
+
+section .u{
+  margin-top: 100px;
+  margin-bottom: 30px;
+  font-size: 23px;
+}
+
+#asa .u{
+  border-left: 2.5px solid rgb(250, 197, 100);
+  width: 270px;
+}
+
+#hiru .u{
+  border-left: 2.5px solid rgb(213, 255, 97);
+  width: 230px;
+}
+
+#hiru img{
+  width: 500px;
+  height: 280px;
+}
+
+#kyu .u{
+  border-left: 2.5px solid rgb(93, 250, 140);
+  width: 220px;
+}
+
+#kyu img{
+  width: 500px;
+  height: 280px;
+}
+
+#yoru .u{
+  border-left: 2.5px solid rgb(88, 208, 255);
+  width: 250px;
+}
+
+#kita .u{
+  border-left: 2.5px solid rgb(153, 109, 255);
+  width: 200px;
+}
+
+section .b{
+  margin-left: 35px;
+  font-size: 18px;
+  line-height: 50px;
+}
+
+/*cm2*/
+.cm2{
+  margin-top: 150px;
+  margin-left: 80px;
+  max-width: 400px;
+  height: 250px;
+  border-radius: 25px;
+  background-image: url(https://st.depositphotos.com/3063135/4654/i/600/depositphotos_46548367-stock-photo-japanese-seafood-sushi-on-black.jpg)
+}
+
+.cm2 div{
+  font-size: 60px;
+  color: #fff;
+}
+
+.cm2 .c{
+  margin-left: 40px;
+  animation: c ease-out 2s 3.5s forwards alternate infinite;
+}
+
+@keyframes c{
+  0%{
+    transform: translateX(-80px);
+    opacity: 0;
+  }
+  100%{
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+.cm2 .m{
+  margin-left: 350px;
+  padding-bottom: -20px;
+  animation: m ease-out 2s 3.5s forwards alternate infinite;
+}
+
+@keyframes m{
+  0%{
+    transform: translateX(80px);
+    opacity: 0;
+  }
+  100%{
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+/*まとめ*/
+.mato{
+  margin-top: 130px;
+}
+
+.mato p{
+  margin-top: -20px;
+  margin-left: 30px;
+  margin-bottom: 120px;
+  font-size: 18px;
+  line-height: 38px;
+}
+
+.modo a{
+  margin-top: 80px;
+  margin-left: 260px;
+  padding: 20px 40px;
+  background: rgb(20, 179, 20);
+  border: green solid;
+  border-radius: 18px;
+  width: 50px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.modo a:hover{
+  opacity: .7;
+}
+
+/*footer*/
+.foot{
+  display: flex;
+  color: #fff;
+  background: rgb(48, 45, 45) ;
+  margin-top: 200px;
+  margin-bottom: 0px;
+}
+
+footer .kabu{
+padding-left: 20px;
+}
+
+footer .kou{
+  padding-left: 200px;
+}
+
+
+
+
+
